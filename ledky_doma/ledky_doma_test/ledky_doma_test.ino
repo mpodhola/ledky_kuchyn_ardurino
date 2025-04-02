@@ -48,7 +48,7 @@ void loop(){
     if (irrecv.decode(&results)){
 
         switch(results.value){
-          case 0xFF30CF: //Keypad button "1"
+          case 0x1CE3A857: //Keypad button "1"
           //analogWrite(bylinkyPin, HIGH);
           //int currState = 
           //delay(2000);
@@ -61,7 +61,7 @@ void loop(){
           }
 
         switch(results.value){
-          case 0xFF18E7: //Keypad button "2"
+          case 0x1CE36897: //Keypad button "2"
           //digitalWrite(kuchynPin, HIGH);
           //delay(2000);
           //digitalWrite(kuchynPin, LOW);
@@ -74,7 +74,7 @@ void loop(){
           }
 
         switch(results.value){
-          case 0xFF7A85: //Keypad button "3"
+          case 0x1CE3E817: //Keypad button "3"
           //digitalWrite(knihovnaPin, HIGH);
           //delay(2000);
           //digitalWrite(knihovnaPin, LOW);
